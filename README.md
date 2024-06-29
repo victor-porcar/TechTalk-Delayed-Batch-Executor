@@ -1,8 +1,8 @@
 # TechTalk: Delayed-Batch-Executor
  
 
-Introduction
-------------
+## Introduction
+
 
 Delayed-Batch-Executor is a public library that I wrote to optimize the usage of database in a multithread java application
 
@@ -10,8 +10,7 @@ Delayed-Batch-Executor is a public library that I wrote to optimize the usage of
 
 [https://web.archive.org/web/20200815000143/https://dzone.com/articles/delayedbatchexecutor-how-to-optimize-database-usag](https://web.archive.org/web/20200815000143/https://dzone.com/articles/delayedbatchexecutor-how-to-optimize-database-usag)
 
-Database queries
-----------------
+## Database queries
 
 The following is a paradigmatic example:
 
@@ -43,8 +42,8 @@ SELECT * FROM CORE_INSTALLED_DEVICE WHERE ID in
 
 Surprisingly it takes around 0.2 seconds, same amount of time !!!! . The reason behind is database do optimize very well these types of queries
 
-DelayedBatchExecutor (DBE)
---------------------------
+## DelayedBatchExecutor (DBE)
+
 
 Let’s suppose a service that offers an endpoint that requires to access database by a parameter and this endpoint has many hits per second.
 
